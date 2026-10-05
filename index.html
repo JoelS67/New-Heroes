@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071827">
+  <meta name="description" content="New Heroes: The First Steps — portal oficial do universo de RP.">
+  <title>New Heroes: The First Steps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-noise"></div>
+
+  <header class="topbar">
+    <button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a class="brand-mini" href="#inicio" aria-label="Início">
+      <img src="assets/new-heroes-logo.png" alt="New Heroes">
+    </a>
+    <a class="discord-mini" href="#" id="discordTop">RP</a>
+  </header>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <span>MENU</span>
+      <button id="closeMenu" aria-label="Fechar menu">×</button>
+    </div>
+    <nav>
+      <a href="#inicio" data-close-menu>Início</a>
+      <a href="#historia" data-close-menu>História do Servidor</a>
+      <a href="#mapa" data-close-menu>Mapa do Servidor</a>
+      <a href="#personagens" data-close-menu>Personagens Importantes</a>
+      <a href="#temporada" data-close-menu>Primeira Temporada</a>
+      <a href="#noticias" data-close-menu>Notícias do Mundo</a>
+      <a href="#editar" data-close-menu>⚙ Personalizar / Atualizar</a>
+    </nav>
+    <div class="drawer-foot">NEW HEROES · THE FIRST STEPS</div>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-slides" id="heroSlides">
+        <div class="hero-slide active" style="background-image:url('assets/hero-family.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('assets/hero-blue.jpg')"></div>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <img class="hero-logo" src="assets/new-heroes-logo.png" alt="New Heroes: The First Steps">
+        <p class="eyebrow">UM NOVO UNIVERSO. UMA PRIMEIRA GERAÇÃO.</p>
+        <h1 id="heroTitle">Todo herói precisa dar o primeiro passo.</h1>
+        <p id="heroIntro">Explore o mundo, conheça seus heróis e descubra os acontecimentos que estão moldando uma nova era.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#historia">EXPLORAR UNIVERSO</a>
+          <a class="btn btn-ghost" href="#temporada">PRIMEIRA TEMPORADA</a>
+        </div>
+      </div>
+      <div class="slide-dots" aria-label="Artes de destaque">
+        <button class="dot active" data-slide="0"></button>
+        <button class="dot" data-slide="1"></button>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div class="ticker-label">BREAKING</div>
+      <div class="ticker-text" id="tickerText">Bem-vindo ao portal oficial de New Heroes.</div>
+    </section>
+
+    <section class="section intro-grid">
+      <div>
+        <span class="section-kicker">THE FIRST STEPS</span>
+        <h2>O mundo está mudando.</h2>
+      </div>
+      <p id="aboutText">New Heroes: The First Steps é um RP autoral de heróis, inspirado na tradição das grandes HQs, mas construído para contar histórias próprias. Aqui, cada personagem pode deixar sua marca.</p>
+    </section>
+
+    <section class="feature-band" id="historia">
+      <div class="feature-image" style="background-image:url('assets/comic-action.jpg')"></div>
+      <div class="feature-copy">
+        <span class="section-kicker">01 · UNIVERSO</span>
+        <h2>História do Servidor</h2>
+        <p id="historyPreview">Conheça os acontecimentos, conflitos e descobertas que deram origem ao universo de New Heroes.</p>
+        <button class="text-link" data-open="historyModal">Ler história completa →</button>
+      </div>
+    </section>
+
+    <section class="section map-section" id="mapa">
+      <div class="section-heading">
+        <span class="section-kicker">02 · MUNDO</span>
+        <h2>Mapa do Servidor</h2>
+        <p>Toque em uma região para descobrir o que existe por lá.</p>
+      </div>
+      <div class="map-card">
+        <div class="map-grid"></div>
+        <div class="map-pin pin-1"><span>01</span><b>METRÓPOLE</b></div>
+        <div class="map-pin pin-2"><span>02</span><b>NOVA YORK</b></div>
+        <div class="map-pin pin-3"><span>03</span><b>BRASIL</b></div>
+        <div class="map-copy">
+          <small>WORLD STATUS</small>
+          <strong>UM PLANETA EM TRANSFORMAÇÃO</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section characters" id="personagens">
+      <div class="section-heading">
+        <span class="section-kicker">03 · ARQUIVOS</span>
+        <h2>Personagens importantes</h2>
+        <p>Os nomes que estão começando a definir esta nova era.</p>
+      </div>
+      <div class="character-grid" id="characterGrid"></div>
+    </section>
+
+    <section class="season" id="temporada">
+      <div class="season-bg"></div>
+      <div class="season-content">
+        <span class="section-kicker">04 · PRIMEIRA TEMPORADA</span>
+        <h2 id="seasonTitle">Os Primeiros Passos</h2>
+        <p id="seasonText">Uma nova geração surge enquanto o mundo tenta entender a existência de pessoas capazes de mudar o destino de uma cidade — ou de um planeta.</p>
+        <button class="btn btn-light" data-open="seasonModal">Ver sinopse completa</button>
+      </div>
+    </section>
+
+    <section class="section news" id="noticias">
+      <div class="section-heading news-heading">
+        <div>
+          <span class="section-kicker">05 · DAILY WORLD</span>
+          <h2>Notícias do mundo</h2>
+        </div>
+        <span class="live-dot">● AO VIVO</span>
+      </div>
+      <div class="news-list" id="newsList"></div>
+      <p class="news-note">As grandes notícias e acontecimentos do RP continuam sendo publicados diretamente no servidor.</p>
+    </section>
+
+    <section class="editor section" id="editar">
+      <div class="section-heading">
+        <span class="section-kicker">ADMINISTRAÇÃO</span>
+        <h2>Personalizar o site</h2>
+        <p>Esta versão possui um painel local para você editar textos e notícias pelo próprio celular. Os dados ficam salvos neste navegador.</p>
+      </div>
+
+      <div class="editor-card">
+        <label>Título principal<input id="editHeroTitle" type="text"></label>
+        <label>Texto de abertura<textarea id="editHeroIntro"></textarea></label>
+        <label>Texto sobre o universo<textarea id="editAbout"></textarea></label>
+        <label>Prévia da história<textarea id="editHistory"></textarea></label>
+        <label>Título da temporada<input id="editSeasonTitle" type="text"></label>
+        <label>Sinopse da temporada<textarea id="editSeasonText"></textarea></label>
+        <label>Texto da barra BREAKING<input id="editTicker" type="text"></label>
+        <div class="editor-actions">
+          <button class="btn btn-primary" id="saveEdits">SALVAR NO CELULAR</button>
+          <button class="btn btn-outline" id="resetEdits">RESTAURAR PADRÃO</button>
+        </div>
+        <p class="editor-tip">Para uma versão pública com atualizações para todos os jogadores, publique estes arquivos em um serviço de hospedagem. O conteúdo principal também está concentrado no <b>script.js</b>, para facilitar edições manuais.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/new-heroes-logo.png" alt="New Heroes">
+    <p>THE FIRST STEPS · UNIVERSO AUTORAL DE RP</p>
+    <span>© 2026 New Heroes</span>
+  </footer>
+
+  <div class="modal" id="historyModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" data-close-modal>×</button>
+      <span class="section-kicker">HISTÓRIA DO SERVIDOR</span>
+      <h2>O começo de uma nova era</h2>
+      <div id="historyFull"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="seasonModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" data-close-modal>×</button>
+      <span class="section-kicker">PRIMEIRA TEMPORADA</span>
+      <h2 id="seasonModalTitle">Os Primeiros Passos</h2>
+      <div id="seasonFull"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
