@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body class="cms-page cms-page--<%= page.slug %>" style="--cyan: <%= site.accentColor %>; --ink: <%= site.backgroundColor %>;">
+  <div class="site-noise" aria-hidden="true"></div><div id="topo"></div>
+  <%- include('partials/topbar') %>
+  <%- include('partials/drawer') %>
+  <main id="conteudo">
+    <header class="cms-hero">
+      <% if (page.heroImage) { %><img class="cms-hero-image" src="<%= page.heroImage %>" alt="<%= page.heroAlt %>" fetchpriority="high"><% } %>
+      <div class="cms-hero-shade"></div>
+      <div class="page-wrap cms-hero-content">
+        <% if (page.kicker) { %><p class="cms-kicker"><%= page.kicker %></p><% } %>
+        <h1><%= page.title %></h1>
+        <% if (page.description) { %><p class="cms-hero-description"><%= page.description %></p><% } %>
+      </div>
+      <span class="cms-hero-index"><%= String(page.slug === 'inicio' ? 0 : pages.findIndex(item => item.slug === page.slug)).padStart(2, '0') %> / NEW HEROES</span>
+    </header>
+    <div class="page-wrap cms-content">
+      <% page.sections.forEach((section, sectionIndex) => { %>
+        <section class="cms-section <%= section.image && !section.items.length ? 'cms-section--image' : '' %>">
+          <% if (section.expandable && section.body) { %>
+            <details class="cms-synopsis"><summary><%= section.heading || 'Ver conteúdo completo' %><span aria-hidden="true">＋</span></summary><p><%= section.body %></p></details>
+          <% } else if (section.heading || section.body) { %>
+            <header class="cms-section-heading">
+              <% if (section.heading) { %><h2><%= section.heading %></h2><% } %>
+              <% if (section.body) { %><p><%= section.body %></p><% } %>
+            </header>
+          <% } %>
+          <% if (section.image && !section.items.length) { %>
+            <figure class="cms-section-image"><img src="<%= section.image %>" alt="<%= section.imageAlt %>" loading="lazy"></figure>
+          <% } %>
+          <% if (section.image && section.items.length) { %>
+            <figure class="cms-section-banner"><img src="<%= section.image %>" alt="<%= section.imageAlt %>" loading="lazy"></figure>
+          <% } %>
+          <% if (section.items.length) { %>
+            <div class="cms-card-grid">
+              <% section.items.forEach(item => { %>
+                <article class="cms-card">
+                  <% if (item.image) { %><img class="cms-card-image" src="<%= item.image %>" alt="<%= item.imageAlt %>" loading="lazy"><% } %>
+                  <% if (item.meta && page.slug === 'personagens') { %><span class="cms-card-meta cms-character-number"><%= item.meta %></span><% } %>
+                  <div class="cms-card-copy">
+                    <% if (item.meta && page.slug !== 'personagens') { %><span class="cms-card-meta"><%= item.meta %></span><% } %>
+                    <% if (item.title) { %><h3><%= item.title %></h3><% } %>
+                    <% if (item.text) { %><p><%= item.text %></p><% } %>
+                    <% if (item.href) { %><a class="cms-card-link" href="<%= item.href %>">EXPLORAR <span aria-hidden="true">↗</span></a><% } %>
+                  </div>
+                </article>
+              <% }) %>
+            </div>
+          <% } %>
+        </section>
+      <% }) %>
+    </div>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>

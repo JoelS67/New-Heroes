@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><%- include('partials/head') %></head>
+<body>
+  <div class="site-noise" aria-hidden="true"></div><div id="topo"></div>
+  <%- include('partials/topbar') %>
+  <%- include('partials/drawer') %>
+  <main id="conteudo" class="page-wrap not-found">
+    <span class="not-found-code">404</span>
+    <p class="eyebrow">SINAL PERDIDO</p>
+    <h1>Esta página<br><em>não está no mapa.</em></h1>
+    <p>O endereço pode ter mudado. Volte ao início e continue explorando o universo.</p>
+    <a class="button button-primary" href="/">VOLTAR AO INÍCIO <span>↗</span></a>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>
