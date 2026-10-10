@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <div class="site-noise" aria-hidden="true"></div><div id="topo"></div>
+  <%- include('partials/topbar') %>
+  <%- include('partials/drawer') %>
+  <main id="conteudo" class="page-wrap inner-page characters-page">
+    <header class="page-heading characters-heading">
+      <div class="section-label"><span>03</span> ARQUIVOS</div>
+      <h1>Personagens importantes</h1>
+      <p>Os nomes que estão começando a definir esta nova era.</p>
+    </header>
+    <section class="character-gallery" aria-label="Personagens importantes">
+      <article class="character-card">
+        <img src="/assets/personagem-primeiro-heroi.svg" alt="Ilustração original de um herói diante de uma aurora azul" loading="lazy">
+        <span class="character-number">01</span>
+        <div class="character-card-copy"><h2>Primeiro Herói</h2><p>A definir · Adicione aqui o primeiro personagem importante da sua lore.</p></div>
+      </article>
+      <article class="character-card">
+        <img src="/assets/personagem-sentinela.svg" alt="Ilustração original de uma sentinela de armadura verde e dourada" loading="lazy">
+        <span class="character-number">02</span>
+        <div class="character-card-copy"><h2>A Sentinela</h2><p>A definir · Adicione aqui uma figura central do universo.</p></div>
+      </article>
+      <article class="character-card">
+        <img src="/assets/personagem-vigilante.svg" alt="Ilustração original de um vigilante encapuzado na cidade à noite" loading="lazy">
+        <span class="character-number">03</span>
+        <div class="character-card-copy"><h2>O Vigilante</h2><p>A definir · Um espaço reservado para um anti-herói ou vigilante.</p></div>
+      </article>
+      <article class="character-card">
+        <img src="/assets/personagem-inimigo.svg" alt="Ilustração original de uma figura misteriosa sob um céu dramático" loading="lazy">
+        <span class="character-number">04</span>
+        <div class="character-card-copy"><h2>O Inimigo</h2><p>A definir · O grande nome que pode colocar esta nova era à prova.</p></div>
+      </article>
+    </section>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>

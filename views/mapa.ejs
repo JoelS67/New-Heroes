@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <div class="site-noise" aria-hidden="true"></div><div id="topo"></div>
+  <%- include('partials/topbar') %>
+  <%- include('partials/drawer') %>
+  <main id="conteudo" class="page-wrap inner-page">
+    <header class="page-heading"><div class="section-label"><span>02</span> PONTOS DE INTERESSE</div><h1>O palco das<br><em>próximas histórias.</em></h1><p>Um mapa conceitual para orientar suas cenas. Os locais abaixo são pontos de partida para a construção coletiva do servidor.</p></header>
+    <section class="map-panel" aria-label="Mapa ilustrado de uma cidade">
+      <div class="city-map" aria-hidden="true"><div class="map-river"></div><div class="map-park"></div><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-road road-three"></div><div class="map-block block-one"></div><div class="map-block block-two"></div><div class="map-block block-three"></div><div class="map-block block-four"></div><div class="map-marker marker-one"><span>01</span></div><div class="map-marker marker-two"><span>02</span></div><div class="map-marker marker-three"><span>03</span></div><div class="map-coordinates">40°42' N&nbsp; 74°00' W<br>SECTOR NH–01</div><div class="map-compass">N<span>✳</span></div></div>
+      <p class="map-caption"><span>MAPA ESQUEMÁTICO</span><span>LOCAIS SUJEITOS À LORE DO SERVIDOR</span></p>
+    </section>
+    <section class="location-section"><div class="section-label"><span>03</span> ESCOLHA SEU CENÁRIO</div><h2>Três lugares.<br><em>Inúmeras possibilidades.</em></h2><div class="location-grid"><article><span class="location-index">01 / CENTRO</span><h3>Distrito Central</h3><p>Ruas movimentadas, comércio e espaços públicos onde o dia a dia da cidade encontra o inesperado.</p><span class="location-tag">VIDA URBANA</span></article><article><span class="location-index">02 / ALTURA</span><h3>Zona Metropolitana</h3><p>Uma paisagem de prédios, avenidas e contrastes — perfeita para cenas que pedem escala e movimento.</p><span class="location-tag">AÇÃO &amp; INVESTIGAÇÃO</span></article><article><span class="location-index">03 / REFÚGIO</span><h3>Território Aberto</h3><p>Um espaço para imaginar bases, esconderijos e lugares pessoais que sua história ainda vai revelar.</p><span class="location-tag">CRIAÇÃO LIVRE</span></article></div></section>
+    <p class="map-disclaimer">Este mapa é ilustrativo; confirme nomes e locais oficiais com a equipe do servidor antes de usar em uma cena.</p>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>

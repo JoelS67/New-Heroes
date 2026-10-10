@@ -1,0 +1,17 @@
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand-mini" href="/" aria-label="New Heroes — início">
+    <img src="<%= site.logo || '/assets/new-heroes-logo.png' %>" alt="<%= site.name %>">
+  </a>
+  <nav class="desktop-nav" aria-label="Navegação principal">
+    <% pages.filter(item => item.showInNav && item.slug !== 'inicio').slice(0, 6).forEach(item => { %>
+      <a href="/<%= item.slug %>"><%= item.title %></a>
+    <% }) %>
+  </nav>
+  <div class="topbar-actions">
+    <a class="header-cta" href="/historia">COMECE AQUI <span aria-hidden="true">↗</span></a>
+    <button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-controls="drawer" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>

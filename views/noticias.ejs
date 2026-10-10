@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <div class="site-noise" aria-hidden="true"></div><div id="topo"></div>
+  <%- include('partials/topbar') %>
+  <%- include('partials/drawer') %>
+  <main id="conteudo" class="page-wrap inner-page news-page">
+    <header class="news-page-heading">
+      <div><div class="section-label"><span>05</span> DAILY WORLD</div><h1>Notícias do mundo</h1></div>
+      <span class="news-live"><i aria-hidden="true"></i> AO VIVO</span>
+    </header>
+    <section class="news-list" aria-label="Notícias do mundo">
+      <article class="news-item"><div class="news-meta"><span>MUNDO</span><time datetime="2026-10-05">05 OUT 2026</time></div><h2>Uma nova era está começando</h2><p>As primeiras histórias de New Heroes estão sendo escritas. Novas informações serão adicionadas aqui conforme os acontecimentos avançarem.</p></article>
+      <article class="news-item"><div class="news-meta"><span>SOCIEDADE</span><time datetime="2026-10-04">04 OUT 2026</time></div><h2>Quem serão os novos heróis?</h2><p>Com o surgimento de indivíduos extraordinários, a sociedade começa a discutir o que significa ser um herói.</p></article>
+      <article class="news-item"><div class="news-meta"><span>CIDADE</span><time datetime="2026-10-02">02 OUT 2026</time></div><h2>Autoridades reforçam monitoramento</h2><p>Órgãos públicos observam discretamente os primeiros sinais de uma mudança que pode afetar o mundo inteiro.</p></article>
+    </section>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>

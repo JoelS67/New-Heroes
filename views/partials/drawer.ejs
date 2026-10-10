@@ -1,0 +1,14 @@
+<aside class="drawer" id="drawer" aria-hidden="true" inert>
+  <div class="drawer-head">
+    <span>MENU</span>
+    <button id="closeMenu" aria-label="Fechar menu">×</button>
+  </div>
+  <nav>
+    <a href="/" data-close-menu>Início <span>00</span></a>
+    <% pages.filter(item => item.showInNav && item.slug !== 'inicio').forEach((item, index) => { %>
+      <a href="/<%= item.slug %>" data-close-menu><%= item.title %> <span><%= String(index + 1).padStart(2, '0') %></span></a>
+    <% }) %>
+  </nav>
+  <div class="drawer-foot"><%= site.name.toUpperCase() %></div>
+</aside>
+<div class="backdrop" id="backdrop" aria-hidden="true"></div>

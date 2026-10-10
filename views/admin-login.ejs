@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071522"><title>Admin · New Heroes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/admin.css">
+  <script src="/js/admin-login.js" defer></script>
+</head>
+<body class="admin-body login-body">
+  <main class="login-card">
+    <a class="admin-back" href="/">← VOLTAR AO SITE</a>
+    <div class="admin-mark">NH<span>·</span></div>
+    <p class="admin-eyebrow">ÁREA RESTRITA</p>
+    <h1>Painel do<br><em>universo.</em></h1>
+    <p class="login-intro">Entre com sua conta de administrador para gerenciar páginas, textos e imagens.</p>
+    <form id="login-form" autocomplete="on">
+      <label for="username">USUÁRIO</label>
+      <input id="username" name="username" autocomplete="username" required maxlength="80" placeholder="Seu usuário">
+      <label for="password">SENHA</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required maxlength="200" placeholder="Sua senha">
+      <p class="form-message" id="login-message" aria-live="polite"></p>
+      <button class="admin-primary" type="submit">ENTRAR NO PAINEL <span>↗</span></button>
+    </form>
+    <p class="login-footnote">Acesso exclusivo para administradores autorizados.</p>
+  </main>
+</body>
+</html>

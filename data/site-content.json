@@ -1,0 +1,291 @@
+{
+  "site": {
+    "name": "New Heroes: The First Steps",
+    "logo": "/assets/new-heroes-logo.png",
+    "footerText": "Um universo de heróis. Histórias que começam com você.",
+    "accentColor": "#35c5e8",
+    "backgroundColor": "#071522"
+  },
+  "pages": [
+    {
+      "slug": "inicio",
+      "title": "O mundo precisa de novos heróis.",
+      "kicker": "UM UNIVERSO DE RP ORIGINAL",
+      "description": "Grandes poderes não escrevem uma história sozinhos. Suas escolhas, alianças e conflitos é que mudam tudo.",
+      "heroImage": "/assets/comic-action.jpg",
+      "heroAlt": "Heróis enfrentam uma batalha diante dos prédios da cidade",
+      "showInNav": false,
+      "sections": [
+        {
+          "heading": "Uma cidade. Mil possibilidades.",
+          "body": "New Heroes: The First Steps é um universo de interpretação de personagens feito para criar histórias em conjunto. Heróis, civis e figuras à margem da lei dividem o mesmo mundo — e cada escolha pode abrir um novo caminho.",
+          "image": "",
+          "imageAlt": "",
+          "expandable": false,
+          "items": []
+        },
+        {
+          "heading": "Por onde começar?",
+          "body": "Explore os pontos de partida e encontre o seu lugar neste universo.",
+          "image": "",
+          "imageAlt": "",
+          "expandable": false,
+          "items": [
+            {
+              "meta": "01 · LORE",
+              "title": "O universo",
+              "text": "Conheça a premissa e o cenário do RP.",
+              "image": "/assets/comic-action.jpg",
+              "imageAlt": "Heróis em ação na cidade",
+              "href": "/historia"
+            },
+            {
+              "meta": "02 · LOCAIS",
+              "title": "O mapa",
+              "text": "Descubra lugares para a sua próxima cena.",
+              "image": "/assets/hero-blue.jpg",
+              "imageAlt": "Arte azul do universo",
+              "href": "/mapa"
+            },
+            {
+              "meta": "03 · ELENCO",
+              "title": "Os personagens",
+              "text": "Veja os caminhos que você pode seguir.",
+              "image": "/assets/hero-family.jpg",
+              "imageAlt": "Equipe reunida",
+              "href": "/personagens"
+            }
+          ]
+        },
+        {
+          "heading": "Os Primeiros Passos",
+          "body": "Uma nova geração surge enquanto o mundo tenta entender a existência de pessoas capazes de mudar o destino de uma cidade — ou de um planeta.",
+          "image": "/assets/hero-blue.jpg",
+          "imageAlt": "Arte azul de New Heroes",
+          "expandable": false,
+          "items": [
+            {
+              "meta": "04 · PRIMEIRA TEMPORADA",
+              "title": "Ver a temporada",
+              "text": "Leia a sinopse completa.",
+              "image": "",
+              "imageAlt": "",
+              "href": "/temporada"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "historia",
+      "title": "Uma história em construção.",
+      "kicker": "01 · ARQUIVOS DO UNIVERSO",
+      "description": "New Heroes é um cenário aberto para contar histórias de heroísmo, escolhas difíceis e consequências que atravessam uma cidade inteira.",
+      "heroImage": "/assets/comic-action.jpg",
+      "heroAlt": "Confronto entre heróis em uma cidade",
+      "showInNav": true,
+      "sections": [
+        {
+          "heading": "O extraordinário chegou ao cotidiano.",
+          "body": "Em New Heroes, pessoas de diferentes origens dividem espaço com acontecimentos que desafiam o que a sociedade considera possível. Para alguns, isso é um chamado para ajudar. Para outros, uma oportunidade, uma ameaça ou simplesmente uma realidade que ainda precisam compreender.\n\nNão existe uma única forma de ser herói. O que define cada personagem são as decisões que toma, as pessoas que protege — ou coloca em risco — e aquilo que está disposto a sacrificar.",
+          "image": "/assets/comic-action.jpg",
+          "imageAlt": "Heróis em confronto no centro da cidade",
+          "expandable": false,
+          "items": []
+        },
+        {
+          "heading": "O começo é seu.",
+          "body": "O universo cresce com a comunidade. Eventos e novos capítulos podem ser acrescentados conforme as histórias do servidor avançam.",
+          "image": "",
+          "imageAlt": "",
+          "expandable": false,
+          "items": [
+            {
+              "meta": "01",
+              "title": "Descobrir",
+              "text": "Encontre o tom do mundo e imagine onde seu personagem se encaixa.",
+              "image": "",
+              "imageAlt": "",
+              "href": ""
+            },
+            {
+              "meta": "02",
+              "title": "Escolher",
+              "text": "Defina objetivos, limites e as relações que movem sua história.",
+              "image": "",
+              "imageAlt": "",
+              "href": ""
+            },
+            {
+              "meta": "03",
+              "title": "Transformar",
+              "text": "Jogue em conjunto e ajude a construir o próximo capítulo.",
+              "image": "",
+              "imageAlt": "",
+              "href": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mapa",
+      "title": "O palco das próximas histórias.",
+      "kicker": "02 · PONTOS DE INTERESSE",
+      "description": "Um mapa conceitual para orientar suas cenas. Os locais abaixo são pontos de partida para a construção coletiva do servidor.",
+      "heroImage": "/assets/hero-blue.jpg",
+      "heroAlt": "Arte azul de New Heroes",
+      "showInNav": true,
+      "sections": [
+        {
+          "heading": "Três lugares. Inúmeras possibilidades.",
+          "body": "Este mapa é ilustrativo; confirme nomes e locais oficiais com a equipe do servidor antes de usar em uma cena.",
+          "image": "",
+          "imageAlt": "",
+          "expandable": false,
+          "items": [
+            {
+              "meta": "01 · CENTRO",
+              "title": "Distrito Central",
+              "text": "Ruas movimentadas, comércio e espaços públicos onde o dia a dia da cidade encontra o inesperado.",
+              "image": "",
+              "imageAlt": "",
+              "href": ""
+            },
+            {
+              "meta": "02 · ALTURA",
+              "title": "Zona Metropolitana",
+              "text": "Uma paisagem de prédios, avenidas e contrastes — perfeita para cenas que pedem escala e movimento.",
+              "image": "",
+              "imageAlt": "",
+              "href": ""
+            },
+            {
+              "meta": "03 · REFÚGIO",
+              "title": "Território Aberto",
+              "text": "Um espaço para imaginar bases, esconderijos e lugares pessoais que sua história ainda vai revelar.",
+              "image": "",
+              "imageAlt": "",
+              "href": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "personagens",
+      "title": "Personagens importantes",
+      "kicker": "03 · ARQUIVOS",
+      "description": "Os nomes que estão começando a definir esta nova era.",
+      "heroImage": "/assets/hero-family.jpg",
+      "heroAlt": "Equipe de heróis reunida",
+      "showInNav": true,
+      "sections": [
+        {
+          "heading": "",
+          "body": "",
+          "image": "",
+          "imageAlt": "",
+          "expandable": false,
+          "items": [
+            {
+              "meta": "01",
+              "title": "Primeiro Herói",
+              "text": "A definir · Adicione aqui o primeiro personagem importante da sua lore.",
+              "image": "/assets/personagem-primeiro-heroi.svg",
+              "imageAlt": "Ilustração original de um herói diante de uma aurora azul",
+              "href": ""
+            },
+            {
+              "meta": "02",
+              "title": "A Sentinela",
+              "text": "A definir · Adicione aqui uma figura central do universo.",
+              "image": "/assets/personagem-sentinela.svg",
+              "imageAlt": "Ilustração original de uma sentinela de armadura verde e dourada",
+              "href": ""
+            },
+            {
+              "meta": "03",
+              "title": "O Vigilante",
+              "text": "A definir · Um espaço reservado para um anti-herói ou vigilante.",
+              "image": "/assets/personagem-vigilante.svg",
+              "imageAlt": "Ilustração original de um vigilante encapuzado na cidade à noite",
+              "href": ""
+            },
+            {
+              "meta": "04",
+              "title": "O Inimigo",
+              "text": "A definir · O grande nome que pode colocar esta nova era à prova.",
+              "image": "/assets/personagem-inimigo.svg",
+              "imageAlt": "Ilustração original de uma figura misteriosa sob um céu dramático",
+              "href": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "temporada",
+      "title": "Os Primeiros Passos",
+      "kicker": "04 · PRIMEIRA TEMPORADA",
+      "description": "Uma nova geração surge enquanto o mundo tenta entender a existência de pessoas capazes de mudar o destino de uma cidade — ou de um planeta.",
+      "heroImage": "/assets/hero-blue.jpg",
+      "heroAlt": "Arte azul de New Heroes",
+      "showInNav": true,
+      "sections": [
+        {
+          "heading": "Ver sinopse completa",
+          "body": "Uma nova geração surge enquanto o mundo tenta entender a existência de pessoas capazes de mudar o destino de uma cidade — ou de um planeta.",
+          "image": "",
+          "imageAlt": "",
+          "expandable": true,
+          "items": []
+        }
+      ]
+    },
+    {
+      "slug": "noticias",
+      "title": "Notícias do mundo",
+      "kicker": "05 · DAILY WORLD",
+      "description": "● AO VIVO",
+      "heroImage": "/assets/comic-action.jpg",
+      "heroAlt": "Heróis em ação na cidade",
+      "showInNav": true,
+      "sections": [
+        {
+          "heading": "",
+          "body": "",
+          "image": "",
+          "imageAlt": "",
+          "expandable": false,
+          "items": [
+            {
+              "meta": "MUNDO · 05 OUT 2026",
+              "title": "Uma nova era está começando",
+              "text": "As primeiras histórias de New Heroes estão sendo escritas. Novas informações serão adicionadas aqui conforme os acontecimentos avançarem.",
+              "image": "",
+              "imageAlt": "",
+              "href": ""
+            },
+            {
+              "meta": "SOCIEDADE · 04 OUT 2026",
+              "title": "Quem serão os novos heróis?",
+              "text": "Com o surgimento de indivíduos extraordinários, a sociedade começa a discutir o que significa ser um herói.",
+              "image": "",
+              "imageAlt": "",
+              "href": ""
+            },
+            {
+              "meta": "CIDADE · 02 OUT 2026",
+              "title": "Autoridades reforçam monitoramento",
+              "text": "Órgãos públicos observam discretamente os primeiros sinais de uma mudança que pode afetar o mundo inteiro.",
+              "image": "",
+              "imageAlt": "",
+              "href": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071522"><title>Editor do portal · New Heroes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/admin.css">
+  <script src="/js/admin.js" defer></script>
+</head>
+<body class="admin-body editor-body">
+  <header class="editor-topbar">
+    <a class="editor-brand" href="/admin"><span class="admin-mark">NH<span>·</span></span><span>STUDIO <small>PAINEL DE ADMINISTRAÇÃO</small></span></a>
+    <div class="editor-top-actions"><a class="view-site" href="/" target="_blank" rel="noreferrer">VER SITE ↗</a><button class="admin-quiet" id="logout-button" type="button">SAIR</button></div>
+  </header>
+  <div class="editor-shell">
+    <aside class="editor-sidebar">
+      <div class="sidebar-heading"><span>PÁGINAS DO PORTAL</span><button class="icon-action" id="add-page" type="button" aria-label="Criar página" title="Criar página">＋</button></div>
+      <nav class="page-list" id="page-list" aria-label="Páginas editáveis"></nav>
+      <div class="sidebar-tip"><span>✳</span><p>Suas alterações só aparecem no site depois de publicadas.</p></div>
+    </aside>
+    <main class="editor-main">
+      <div class="editor-heading">
+        <div><p class="admin-eyebrow">ESTÚDIO DE CONTEÚDO</p><h1>Personalize seu portal.</h1><p>Edite a página selecionada, organize seções e publique quando estiver pronto.</p></div>
+        <div class="editor-actions"><span class="save-status" id="save-status" aria-live="polite">Tudo salvo</span><button class="admin-quiet" id="export-button" type="button">BAIXAR BACKUP</button><button class="admin-primary" id="save-button" type="button">PUBLICAR ALTERAÇÕES <span>↗</span></button></div>
+      </div>
+      <div class="editor-alert" id="editor-alert" role="status" hidden></div>
+      <section class="confirm-panel" id="confirm-panel" role="alertdialog" aria-modal="true" aria-labelledby="confirm-message" hidden>
+        <p id="confirm-message"></p><div><button class="admin-quiet" id="cancel-confirm" type="button">CANCELAR</button><button class="admin-danger" id="accept-confirm" type="button">CONFIRMAR</button></div>
+      </section>
+      <form class="create-page-form" id="create-page-form" hidden>
+        <label class="admin-field"><span class="field-label">NOME DA NOVA PÁGINA</span><input class="admin-input" id="new-page-title" maxlength="100" placeholder="Ex.: Regras do servidor" required></label>
+        <button class="admin-primary" type="submit">CRIAR PÁGINA <span>↗</span></button>
+        <button class="admin-quiet" id="cancel-create-page" type="button">CANCELAR</button>
+      </form>
+      <section class="site-settings panel-card">
+        <div class="panel-title"><div><span class="step-index">00</span><h2>Identidade do site</h2></div><span class="panel-hint">CONFIGURAÇÃO GLOBAL</span></div>
+        <div class="settings-grid" id="site-settings"></div>
+      </section>
+      <section class="page-settings panel-card">
+        <div class="panel-title"><div><span class="step-index">01</span><h2 id="selected-page-title">Conteúdo da página</h2></div><span class="panel-hint" id="selected-page-path"></span></div>
+        <div id="page-fields" class="page-fields"></div>
+      </section>
+      <section class="sections-panel panel-card">
+        <div class="panel-title"><div><span class="step-index">02</span><h2>Seções e conteúdo</h2></div><button class="admin-secondary" id="add-section" type="button">＋ ADICIONAR SEÇÃO</button></div>
+        <p class="panel-description">Combine textos, imagens e cards para montar a página. Deixe um campo vazio para não exibi-lo.</p>
+        <div id="sections-editor" class="sections-editor"></div>
+      </section>
+      <div class="editor-bottom"><button class="admin-danger" id="delete-page" type="button">EXCLUIR ESTA PÁGINA</button><p>Imagens: JPG, PNG ou WebP, até 5 MB. As artes da biblioteca do site também podem ser usadas.</p></div>
+    </main>
+  </div>
+</body>
+</html>
